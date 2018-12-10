@@ -16,12 +16,17 @@ To install dependencies are need to run project, make this command in root proje
 ``` npm install ```
 
 To connect your local project with server define proxy configuration in ``` package.json ``` file.
-Example: 
-    ```{
-        scripts: {
+Example:
+
+    ``` 
+    ...
+    {
+        "scripts": {
             "start": "ember server --proxy https://YOUR_SERVE.com/"
         }
-    }```
+    }
+    ...
+    ```
 
 Start project with command:
 

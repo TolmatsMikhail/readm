@@ -11,7 +11,7 @@ Before start, you have to install
 * [Bower](https://bower.io/) is a package manager for the web.
 * [Ember](https://bower.io/) is project main web-framework.
 
-To install dependencies are need to run project, make this command in root project folder.  
+To install dependencies type this command in root project folder.  
 
 ``` npm install ```
 
@@ -29,3 +29,5 @@ Example:
 Start project with command:
 
 ``` npm run start ```
+
+After successful build open browser on page  ```http://localhost:4200/```

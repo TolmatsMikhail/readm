@@ -26,7 +26,7 @@ Example:
     }
     ...
 
-Start project with command:
+Start project terminal command:
 
 ``` npm run start ```
 
@@ -34,10 +34,15 @@ After successful build open browser on page  ```http://localhost:4200/```
 
 ## Building
 
-To build project type this command in root project folder:
+Build project with terminal command:
 ``` npm run build ```
 
 ## Documentation
 
 You can find the Ember documentation [on this website](https://www.emberjs.com/).
 Project uses Ember v.2.3.2
+
+## Services
+
+* 1
+* 2

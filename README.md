@@ -9,8 +9,20 @@ Before start, you have to install
 
 * [NodeJS](https://nodejs.org/en/download/) is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Bower](https://bower.io/) is a package manager for the web.
-* [Ember](https://bower.io/) is project main framework.
+* [Ember](https://bower.io/) is project main web-framework.
 
-To install dependencies are need to run project, run 
+To install dependencies are need to run project, make this command in root project folder.  
 
-```jsx npm install ```
+``` npm install ```
+
+To connect your local project with server define proxy configuration in ``` package.json ``` file.
+Example: 
+    ```{
+        scripts: {
+            "start": "ember server --proxy https://YOUR_SERVE.com/"
+        }
+    }```
+
+Start project with command:
+
+``` npm run start ```

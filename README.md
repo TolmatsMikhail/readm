@@ -18,7 +18,6 @@ To install dependencies are need to run project, make this command in root proje
 To connect your local project with server define proxy configuration in ``` package.json ``` file.
 Example:
 
-    ``` 
     ...
     {
         "scripts": {
@@ -26,7 +25,6 @@ Example:
         }
     }
     ...
-    ```
 
 Start project with command:
 

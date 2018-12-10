@@ -15,6 +15,8 @@ To install dependencies type this command in root project folder.
 
 ``` npm install ```
 
+Define namespace in ```app.js```. You can redefine in you component.
+
 To connect your local project with server define proxy configuration in ``` package.json ``` file.
 Example:
 
@@ -44,5 +46,12 @@ Project uses Ember v.2.3.2
 
 ## Services
 
-* 1
-* 2
+### Translate
+
+To use different languages in project, look at ```app/locales```.
+To get new languange support create a new folder with config.js, translations.js and translations.json files.
+Important! Every file keys have to be equal for all folders in ```app/locales```.
+
+### Date and time
+
+Application use **[Documentation](http://momentjs.com/docs/)**

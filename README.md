@@ -49,7 +49,9 @@ Project uses Ember v.2.3.2
 ### Translate
 
 To use different languages in project, look at ```app/locales```.
-To get new languange support create a new folder with config.js, translations.js and translations.json files.
+
+To get new languange support create a new folder with config.js, translations.js and translations.json files in.
+
 Important! Every file keys have to be equal for all folders in ```app/locales```.
 
 ### Date and time

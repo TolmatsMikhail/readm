@@ -61,3 +61,36 @@ Application use [moment](http://momentjs.com/docs/)
 ### Bootstrap
 
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. See [documentation](http://getbootstrap.com)
+
+###  Notify user
+
+* Line-style notification. Examples:
+
+Success notification with translate:
+
+```CONTEXT.get('flashMessages').success(CONTEXT.get('i18n').t('place.saved'))```
+
+Error notification with translate:
+
+```CONTEXT.get('flashMessages').danger(CONTEXT.get('i18n').t('place.saved'))```
+
+Combine notifications with translate:
+
+```CONTEXT.get('flashMessages').add(CONTEXT.get('i18n').t('place.saved'))```
+
+Remove notifications:
+
+```CONTEXT.get('flashMessages').clearMessages()```
+
+* Toaster style notification 
+
+Define PNotify ```/* global PNotify */```
+
+Examples:
+```
+new PNotify({
+    text: this.get('i18n').t('dailyReport.activityCategory.saved'),
+    type: 'success',
+    delay: 2500
+})
+```

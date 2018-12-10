@@ -64,7 +64,9 @@ Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. See [
 
 ###  Notify user
 
-* Line-style notification. Examples:
+* Line-style notification.
+
+Usage examples:
 
 Success notification with translate:
 
@@ -82,11 +84,12 @@ Remove notifications:
 
 ```CONTEXT.get('flashMessages').clearMessages()```
 
-* Toaster style notification 
+* Toaster style notification. [PNotify](https://sciactive.com/pnotify/)
 
 Define PNotify ```/* global PNotify */```
 
-Examples:
+Usage examples:
+
 ```
 new PNotify({
     text: this.get('i18n').t('dailyReport.activityCategory.saved'),

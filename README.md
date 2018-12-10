@@ -13,4 +13,4 @@ Before start, you have to install
 
 To install dependencies are need to run project, run 
 
-``` npm install ```
+```jsx npm install ```

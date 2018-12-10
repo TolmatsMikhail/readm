@@ -44,7 +44,7 @@ Build project with terminal command:
 You can find the Ember documentation [on this website](https://www.emberjs.com/).
 Project uses Ember v.2.3.2
 
-## Services
+## Services you may use often
 
 ### Translate
 
@@ -54,4 +54,8 @@ Important! Every file keys have to be equal for all folders in ```app/locales```
 
 ### Date and time
 
-Application use **[Documentation](http://momentjs.com/docs/)**
+Application use [moment](http://momentjs.com/docs/)
+
+### Bootstrap
+
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. See [documentation](http://getbootstrap.com)

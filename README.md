@@ -13,30 +13,32 @@ Before start, you have to install
 
 To install dependencies type this command in root project folder.  
 
-``` npm install ```
+``` bower install && npm install ```
 
-Define namespace in ```app.js```. You can redefine in you component.
+Define namespace in ```app.js```. You can redefine it in every component to customize requset to server.
 
 To connect your local project with server define proxy configuration in ``` package.json ``` file.
+
 Example:
 
     ...
     {
         "scripts": {
-            "start": "ember server --proxy https://YOUR_SERVE.com/"
+            "start": "ember server --proxy https://YOUR_SERVER.com/"
         }
     }
     ...
 
-Start project terminal command:
+Start project locally with terminal command:
 
 ``` npm run start ```
 
-After successful build open browser on page  ```http://localhost:4200/```
+After successful build open browser on page  ```http://localhost:4200/```.
 
 ## Building
 
 Build project with terminal command:
+
 ``` npm run build ```
 
 ## Documentation
@@ -44,23 +46,25 @@ Build project with terminal command:
 You can find the Ember documentation [on this website](https://www.emberjs.com/).
 Project uses Ember v.2.3.2
 
-## Services you may use often
+## Services you often may use
 
 ### Translate
 
-To use different languages in project, look at ```app/locales```.
+To use different languages in project, look at ```app/locales``` folder.
 
 To get new languange support create a new folder with config.js, translations.js and translations.json files in.
 
-Important! Every file keys have to be equal for all folders in ```app/locales```.
+Important! Every file's keys have to be equal for all folders in ```app/locales```.
+
+To overview visit ```top-navigation.js```.
 
 ### Date and time
 
-Application use [moment](http://momentjs.com/docs/)
+Application use [moment](http://momentjs.com/docs/) to get dates, convert dates and do other different manipulation with Date object.
 
 ### Bootstrap
 
-Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. See [documentation](http://getbootstrap.com)
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. See [documentation](http://getbootstrap.com) for details.
 
 ###  Notify user
 
@@ -80,13 +84,13 @@ Combine notifications with translate:
 
 ```CONTEXT.get('flashMessages').add(CONTEXT.get('i18n').t('place.saved'))```
 
-Remove notifications:
+Remove notification:
 
 ```CONTEXT.get('flashMessages').clearMessages()```
 
-* Toaster style notification. [PNotify](https://sciactive.com/pnotify/)
+* Toaster style notification. See [PNotify documentation](https://sciactive.com/pnotify/)
 
-Define PNotify ```/* global PNotify */```
+Define PNotify ```/* global PNotify */``` in your controller/service.
 
 Usage examples:
 
@@ -97,3 +101,12 @@ new PNotify({
     delay: 2500
 })
 ```
+
+## Styles
+
+Feel free to use default Bootstrap styles.
+Also you can add your own components' styles to file ``` app/styles/app.css ```
+
+## Assets - fonts and images
+
+Web-fonts and images are stored in ``` public/assets```

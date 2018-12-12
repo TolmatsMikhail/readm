@@ -60,7 +60,7 @@ Then you need to setup a mirror in your git.
 
 Once you have added your SSH key via AWS IAM (Identity and Access Management) add a remote and git push as with any other git repo.
 
-Check ```.git/config``` file or type in terminal git congif --list.
+Check ```.git/config``` file or type in terminal ```git config --list.```
 
 It should looks as follows for the codecommit remote:
 

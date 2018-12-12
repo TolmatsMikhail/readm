@@ -35,11 +35,31 @@ Start project locally with terminal command:
 
 After successful build open browser on page  ```http://localhost:4200/```.
 
-## Building
+## Build and Deploy
 
-Build project with terminal command:
+### First way
+
+Build your project locally with npm command:
 
 ``` npm run build ```
+
+Files from ```dist/``` folder put on you server.
+
+### Second way (as example from own kindiedayz development)
+
+Deploy and build are carried out using [Amazon Web Servive](https://aws.amazon.com/ru/).
+
+Code is stored on the [Bitbucket](bitbucket.org).
+
+Since we deploy the project on AWS we need to deploy the changes on AWS CodeCommit. AWS CodeCommit is actually just a mirror for Bitbucket repository, so the changes should be done in Bitbucket repository and after that be published in AWS CodeCommit.
+To do so you need to generate SSH key - follow step 3 from https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
+Then you need to setup a mirror in your git.
+
+Once you have added your SSH key via AWS IAM (Identity and Access Management) add a remote and git push as with any other git repo.
+```.git/config```should looks as follows for the codecommit remote:
+[remote "codecommit"]
+url = ssh://git-codecommit.eu-west-1.amazonaws.com/v1/repos/kindiedays-repository
+fetch = +refs/heads/*:refs/remotes/origin/*
 
 ## Documentation
 

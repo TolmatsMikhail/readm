@@ -55,11 +55,15 @@ Since we deploy the project on AWS we need to deploy the changes on AWS CodeComm
 
 AWS CodeCommit is actually just a mirror for Bitbucket repository, so the changes should be done in Bitbucket repository and after that be published in AWS CodeCommit.
 
-To do so you need to generate SSH key - follow step 3 from https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
+To do so you need to generate SSH key - follow step 3 from [this page](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html).
 Then you need to setup a mirror in your git.
 
 Once you have added your SSH key via AWS IAM (Identity and Access Management) add a remote and git push as with any other git repo.
-```.git/config```should looks as follows for the codecommit remote:
+
+Check ```.git/config``` file or type in terminal git congif --list.
+
+It should looks as follows for the codecommit remote:
+
 ```
     [remote "codecommit"]
     url = ssh://git-codecommit.eu-west-1.amazonaws.com/v1/repos/kindiedays-repository
